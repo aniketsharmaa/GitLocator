@@ -1,0 +1,50 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* display: flex; */
+  background-color: azure;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  
+}
+.mainContainer {
+    margin-top: 30px ;
+    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: rebeccapurple 2px solid ; */
+  height: 400px;
+  width: 350px;
+}
+.gitLocator {
+  color: black;
+  font-size: 26px;
+}
+.input {
+  color: black;
+  border-top: 0px;
+}
+.para {
+  color: black;
+}
+
+.btn {
+  /* border: 2px solid red; */
+  height: 24px;
+  width: 80px;
+  border-radius: 10%;
+  border: 2px solid black;
+  text-decoration: none;
+  border-style: none ;
+  background-color: floralwhite;
+  
+}
+.instructions{
+    margin-top: 20px;
+}
