@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>📍 Git Locator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="mainContainer">
-        <div class="gitLocator"><h2>Git Locator!!</h2></div>
-        <div class="input">
-          <input type="" id="inputvalue" placeholder="aniketsharmaa" required />
 
-          <button class="btn" onclick="getData()">Location</button>
-        </div>
-        <div class="main-para">
-          <p class="para">
-            User Location is in 📍 <span class="locationId"> _________ </span>
-          </p>
-        </div>
-        <div class="instructions">
-          <p>1. Enter GitHub username and submit.</p>
-          <p>2. Wait for location data to load.</p>
-          <p>3. View the user's location.</p>
-          <p>4. Optionally, enter a different username to check another user's location.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📍 Git Locator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="mainContainer">
+      <div class="gitLocator">
+        <h2>Git Locator!!</h2>
       </div>
+      <div class="input">
+        <input type="text" id="inputvalue" placeholder="aniketsharmaa" required />
+        <button class="btn" onclick="getData()">Location</button>
       </div>
-     
+      <div class="main-para">
+        <p class="para">
+          <!-- FIXME: Avoid this hard coded line, or just hide it initially, show it after the api is fetched -->
+          User Location is in 📍
+          <span class="locationId"> _________ </span>
+        </p>
+      </div>
+      <div class="instructions">
+        <!-- FIXME:instead of numbering manually, try to use html list -->
+        <p>1. Enter GitHub username and submit.</p>
+        <p>2. Wait for location data to load.</p>
+        <p>3. View the user's location.</p>
+        <p>
+          4. Optionally, enter a different username to check another
+          user's location.
+        </p>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
-

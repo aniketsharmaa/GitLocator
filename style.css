@@ -1,3 +1,11 @@
+* {
+  font-family: 'Inter', sans-serif;
+  /* TODO: Add the following lines to remove the default padding and margin in all the tags */
+/*   
+  margin: 0px;
+  padding: 0px; */
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -9,11 +17,11 @@ body {
   justify-content: center;
   justify-items: center;
   align-items: center;
-  
 }
 .mainContainer {
-    margin-top: 30px ;
-    padding: 10px;
+  /* margin-top: 30px;       <-- TODO:Try to avoid using px, use rem instead. 1rem = 16px */
+  margin-top: 1.8rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,30 +29,44 @@ body {
   /* border: rebeccapurple 2px solid ; */
   height: 400px;
   width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 8px -1px #a69b9b;
 }
 .gitLocator {
-  color: black;
+  /* color: black;    <-- TODO:Default color is already black. No need to specify */
   font-size: 26px;
 }
 .input {
-  color: black;
+  /* color: black; */
   border-top: 0px;
 }
+
+/*TODO:This is called css selectors */
+.input > input {      
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #ececec;;
+}
+
 .para {
   color: black;
 }
 
 .btn {
   /* border: 2px solid red; */
-  height: 24px;
-  width: 80px;
-  border-radius: 10%;
-  border: 2px solid black;
-  text-decoration: none;
-  border-style: none ;
-  background-color: floralwhite;
-  
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: rgb(124 255 218);
 }
-.instructions{
-    margin-top: 20px;
+
+.btn:hover {
+  box-shadow: 0px 1px 8px -1px #a69b9b;
+}
+
+.instructions {
+  margin-top: 20px;
 }
