@@ -8,12 +8,13 @@ async function getData() {
     return;
   }
   var ApiUrl = 'https://api.github.com/users/' + userName;
-  // console.log(ApiUrl)
+  // FIXME: you can also write the above line as follows
+  // var ApiUrl = `https://api.github.com/users/${userName}`
 
   const value = await fetch(ApiUrl);
   const response = await value.json();
 
-  // FIXME: above fetch function can be also written as follows
+  // FIXME: above fetch function can be also written as follows. API calls should be inside try-catch to avoid crashes.
   // async function fetchData() {
   //   try {
   //     const val = await fetch(ApiUrl)

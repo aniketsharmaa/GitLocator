@@ -19,7 +19,7 @@ body {
   align-items: center;
 }
 .mainContainer {
-  /* margin-top: 30px;       <-- Try to avoid using px, use rem instead. 1rem = 16px */
+  /* margin-top: 30px;       <-- TODO:Try to avoid using px, use rem instead. 1rem = 16px */
   margin-top: 1.8rem;
   padding: 2rem;
   display: flex;
@@ -33,7 +33,7 @@ body {
   box-shadow: 0px 1px 8px -1px #a69b9b;
 }
 .gitLocator {
-  /* color: black;    <-- Default color is already black. No need to specify */
+  /* color: black;    <-- TODO:Default color is already black. No need to specify */
   font-size: 26px;
 }
 .input {
@@ -41,7 +41,8 @@ body {
   border-top: 0px;
 }
 
-.input > input {
+/*TODO:This is called css selectors */
+.input > input {      
   padding: 0.8rem;
   border: none;
   border-radius: 0.4rem;
